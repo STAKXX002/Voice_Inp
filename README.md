@@ -19,11 +19,18 @@ This project implements a **speech-to-text** and **text-to-speech** chatbot usin
 
 ---
 
-## Installation
-### **Install Dependencies**
+##  Installation
+Ensure you're using **Python 3.11** or the latest stable version.
+
+### Install Dependencies  
 ```bash
-pip install speechrecognition whisper openai-whisper pyttsx3
-```
+pip install git+https://github.com/openai/whisper.git -q
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install SpeechRecognition -q
+pip install pipwin
+pipwin install pyaudio  # Only for Windows users
+pip install numpy more-itertools numba tqdm tiktoken ffmpeg-python
+
 
 ### **Download Whisper Model** (Required for speech recognition)
 Whisper model gets downloaded automatically when running the script for the first time.
