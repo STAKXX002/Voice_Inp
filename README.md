@@ -20,7 +20,7 @@ This project implements a **speech-to-text** and **text-to-speech** chatbot usin
 ---
 
 ## Installation
-### **1️Install Dependencies**
+### **Install Dependencies**
 ```bash
 pip install speechrecognition whisper openai-whisper pyttsx3
 ```
