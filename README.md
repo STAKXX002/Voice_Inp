@@ -1,5 +1,5 @@
 # Voice_Inp
-# Voice Recognition & TTS Chatbot
+# Voice Recognition & TTS
 
 This project implements a **speech-to-text** and **text-to-speech** chatbot using **Whisper AI**, **SpeechRecognition**, and **pyttsx3**.
 
