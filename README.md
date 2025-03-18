@@ -1,1 +1,64 @@
 # Voice_Inp
+# Voice Recognition & TTS Chatbot
+
+This project implements a **speech-to-text** and **text-to-speech** chatbot using **Whisper AI**, **SpeechRecognition**, and **pyttsx3**.
+
+## Features
+- **Speech Recognition:** Uses Whisper AI for accurate speech transcription.
+- **Ambient Noise Adjustment:** Automatically calibrates the microphone.
+- **Text-to-Speech (TTS):** Uses `pyttsx3` for voice output.
+- **Temporary File Management:** Removes recorded audio file after transcription.
+
+---
+
+## Tech Stack
+- Python
+- OpenAI Whisper AI
+- SpeechRecognition (`speech_recognition`)
+- Text-to-Speech (`pyttsx3`)
+
+---
+
+## Installation
+### **1️Install Dependencies**
+```bash
+pip install speechrecognition whisper openai-whisper pyttsx3
+```
+
+### **Download Whisper Model** (Required for speech recognition)
+Whisper model gets downloaded automatically when running the script for the first time.
+
+---
+
+##  Usage
+Run the script:
+```bash
+python script.py
+```
+### **Workflow:**
+1. **Calibrates the microphone for ambient noise** (stay silent for 2 seconds)
+2. **Records your speech**
+3. **Transcribes it using Whisper AI**
+4. **Speaks out the chatbot response using `pyttsx3`**
+---
+
+## Customization
+- Change the voice in `pyttsx3`:
+```python
+engine.setProperty("voice", engine.getProperty("voices")[2].id)
+```
+- Adjust speech rate:
+```python
+engine.setProperty("rate", 160)  # Modify speed
+```
+
+---
+
+## Notes
+- Whisper AI requires a **good-quality microphone** for better accuracy.
+- The script **deletes** recorded audio after processing.
+
+---
+
+
+
